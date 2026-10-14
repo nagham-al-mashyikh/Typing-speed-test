@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار سرعة الكتابة</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-bar">
+            <h1>اختبار سرعة الكتابة ⌨️</h1>
+            <div class="language-selector">
+                <label for="langSelect">اللغة:</label>
+                <select id="langSelect">
+                    <option value="ar">العربية</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+        
+        <p class="instruction-text" id="instructionText">
+            قم بإعادة كتابة النص الظاهر في الصندوق أدناه بدقة، لديك <strong>دقيقة واحدة (60 ثانية)</strong> لإكمال الاختبار!
+        </p>
+
+         <div class="stats-bar">
+            <div class="stat">
+                <span id="timerLabel">الوقت المتبقي:</span>
+                <span id="timer">60</span> <span id="secLabel">ثانية</span>
+            </div>
+            <div class="stat">
+                <span id="accLabel">نسبة الدقة:</span>
+                <span id="accuracy">100</span>%
+            </div>
+        </div>
+
+         <div class="text-display-box" id="textDisplay" dir="rtl"></div>
+
+         <textarea id="inputField" class="input-field" dir="rtl" placeholder="ابدأ الكتابة هنا فوراً..."></textarea>
+
+         <button id="resetBtn" class="reset-btn">إعادة المحاولة</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
